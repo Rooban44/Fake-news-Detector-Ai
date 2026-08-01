@@ -1,0 +1,35 @@
+/* Form Divider Fix */
+.form-divider {
+    text-align: center !important;
+    margin: 2rem 0 !important;
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.form-divider::before,
+.form-divider::after {
+    content: '' !important;
+    flex: 1 !important;
+    height: 1px !important;
+    background: rgba(13, 148, 136, 0.2) !important;
+}
+
+.form-divider::before {
+    margin-right: 1rem !important;
+}
+
+.form-divider::after {
+    margin-left: 1rem !important;
+}
+
+.form-divider span {
+    background: #131d30 !important;
+    padding: 0 1rem !important;
+    color: #718096 !important;
+    font-size: 0.875rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+}

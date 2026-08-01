@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detector AI - Verify News Credibility</title>
+    <meta name="description"
+        content="AI-powered fake news detector that analyzes news articles for credibility using advanced sentiment analysis, linguistic patterns, and source verification.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="enhancements.css">
+    <link rel="stylesheet" href="professional-theme.css">
+    <link rel="stylesheet" href="button-fix.css">
+    <link rel="stylesheet" href="divider-fix.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🔍</span>
+                    <span class="logo-text">FakeNews<span class="logo-highlight">AI</span></span>
+                </div>
+                <nav class="nav">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#how-it-works" class="nav-link">How It Works</a>
+                    <a href="#analyze" class="nav-link">Analyze</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">✨</span>
+                    <span>AI-Powered News Verification</span>
+                </div>
+                <h1 class="hero-title">
+                    Don't Get Fooled by<br>
+                    <span class="gradient-text">Fake News</span>
+                </h1>
+                <p class="hero-description">
+                    Advanced AI analysis combining sentiment detection, credibility scoring,
+                    linguistic pattern recognition, source domain verification, and web-based fact-checking
+                    to help you identify misinformation instantly.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#analyze" class="btn btn-primary">
+                        <span>Start Analyzing</span>
+                        <span class="btn-icon">→</span>
+                    </a>
+                    <a href="#how-it-works" class="btn btn-secondary">
+                        <span>Learn More</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">🎯</div>
+                    <div class="stat-value">6</div>
+                    <div class="stat-label">Analysis Factors</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⚡</div>
+                    <div class="stat-value">&lt;1s</div>
+                    <div class="stat-label">Analysis Time</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🔒</div>
+                    <div class="stat-value">100%</div>
+                    <div class="stat-label">Privacy Protected</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-description">Multi-factor AI analysis for comprehensive news verification</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💭</div>
+                    <h3 class="feature-title">Sentiment Analysis</h3>
+                    <p class="feature-description">
+                        Detects emotional manipulation and bias by analyzing the tone,
+                        polarity, and subjectivity of the text.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">✅</div>
+                    <h3 class="feature-title">Credibility Scoring</h3>
+                    <p class="feature-description">
+                        Identifies credible source indicators like citations, research references,
+                        and expert opinions vs questionable claims.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📝</div>
+                    <h3 class="feature-title">Linguistic Patterns</h3>
+                    <p class="feature-description">
+                        Analyzes writing style, capitalization, punctuation, and sentence structure
+                        for professionalism indicators.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎣</div>
+                    <h3 class="feature-title">Clickbait Detection</h3>
+                    <p class="feature-description">
+                        Identifies sensational phrases and clickbait tactics commonly used
+                        in misleading content.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analyzer Section -->
+    <section id="analyze" class="analyzer">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Analyze News Article</h2>
+                <p class="section-description">Paste any news article text below for instant AI-powered analysis</p>
+            </div>
+
+            <div class="analyzer-container">
+                <form id="analyzerForm" class="analyzer-form">
+                    <div class="form-group">
+                        <label for="newsText" class="form-label">
+                            <span>News Article Text</span>
+                            <span class="label-badge" id="charCount">0 characters</span>
+                        </label>
+                        <textarea id="newsText" class="form-textarea"
+                            placeholder="Paste the news article text here... (minimum 20 characters for accurate analysis)"
+                            rows="10" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sourceUrl" class="form-label">
+                            <span>Source URL (Optional)</span>
+                        </label>
+                        <input type="url" id="sourceUrl" class="form-input"
+                            placeholder="https://example.com/news-article">
+                    </div>
+
+                    <div class="form-divider">
+                        <span>OR</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">
+                            <span>Upload File (Image, PDF, or Text)</span>
+                            <span class="label-badge">Supports: JPG, PNG, PDF, TXT</span>
+                        </label>
+                        <div class="file-upload-area" id="fileUploadArea">
+                            <input type="file" id="fileInput" accept=".jpg,.jpeg,.png,.pdf,.txt" style="display: none;">
+                            <div class="file-upload-content">
+                                <span class="file-upload-icon">📁</span>
+                                <p class="file-upload-text">Click to upload or drag and drop</p>
+                                <p class="file-upload-hint">Images, PDFs, or text files</p>
+                            </div>
+                            <div class="file-selected" id="fileSelected" style="display: none;">
+                                <span class="file-icon">📄</span>
+                                <span class="file-name" id="fileName"></span>
+                                <button type="button" class="file-remove" id="fileRemove">✕</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large" id="analyzeBtn">
+                        <span id="btnText">Analyze Article</span>
+                        <span class="btn-icon">🔍</span>
+                    </button>
+                </form>
+
+                <!-- Results Container -->
+                <div id="resultsContainer" class="results-container" style="display: none;">
+                    <div class="results-header">
+                        <h3 class="results-title">Analysis Results</h3>
+                        <button id="resetBtn" class="btn-reset">New Analysis</button>
+                    </div>
+
+                    <!-- Overall Score -->
+                    <div id="overallScore" class="score-card">
+                        <!-- Populated by JavaScript -->
+                    </div>
+
+                    <!-- Summary Section -->
+                    <div id="summaryContainer" class="summary-container" style="display: none;">
+                        <!-- Populated by JavaScript -->
+                    </div>
+
+                    <!-- Factor Analysis -->
+                    <div class="factors-grid" id="factorsGrid">
+                        <!-- Populated by JavaScript -->
+                    </div>
+
+                    <!-- Warnings -->
+                    <div id="warningsContainer" class="warnings-container">
+                        <!-- Populated by JavaScript -->
+                    </div>
+
+                    <!-- Recommendations -->
+                    <div id="recommendationsContainer" class="recommendations-container">
+                        <!-- Populated by JavaScript -->
+                    </div>
+
+                    <!-- Statistics -->
+                    <div id="statisticsContainer" class="statistics-container">
+                        <!-- Populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">🔍</span>
+                        <span class="logo-text">FakeNews<span class="logo-highlight">AI</span></span>
+                    </div>
+                    <p class="footer-description">
+                        AI-powered news verification to combat misinformation and promote media literacy.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4 class="footer-heading">Product</h4>
+                        <a href="#analyze" class="footer-link">Analyze News</a>
+                        <a href="#how-it-works" class="footer-link">How It Works</a>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4 class="footer-heading">Resources</h4>
+                        <a href="#" class="footer-link">API Documentation</a>
+                        <a href="#" class="footer-link">Media Literacy Guide</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 FakeNewsAI. Built with AI for a more informed world.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="file_upload.js"></script>
+</body>
+
+</html>
